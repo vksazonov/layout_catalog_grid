@@ -4,32 +4,30 @@ $card-gap: 48px;
 .catalog {
   display: grid;
   gap: $card-gap;
-  max-width: $card-width * 4 + $card-gap * 3;
-  margin: 0 auto;
-  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  grid-template-columns: repeat(4, 200px);
 
   @media (max-width: 1023px) {
     & {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(3, 200px);
     }
   }
 
   @media (max-width: 767px) {
     & {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 200px);
     }
   }
 
   @media (max-width: 487px) {
     & {
-      grid-template-columns: repeat(1, 1fr);
+      grid-template-columns: repeat(1, 200px);
     }
   }
 
   &__card {
     display: grid;
-    justify-content: center;
-    align-items: center;
+    justify-items: center;
     width: $card-width;
     height: 300px;
     border: 1px solid #ccc;
